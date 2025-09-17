@@ -5,6 +5,20 @@
 		<title>
 			Explode this balloon
 		</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script>
+			var randomColor = function() {
+				const r = Math.floor(Math.random()*256);
+				const g = Math.floor(Math.random()*256);
+				const b = Math.floor(Math.random()*256);
+				return `rgb(${r}, ${g}, ${b})`;
+			};
+			$(document).ready(function() {
+				$('#button').click(function() {
+					$('body').css('background',randomColor());
+				});
+			});
+		</script>
 		<style>
 			.balloon {
 				width: 200px;

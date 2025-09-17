@@ -1,0 +1,66 @@
+h1 {
+	color: azure;
+	text-align: center;
+	font-size: 60px;
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.parallax1 {
+	background-image: url("../images/blacky.avif");
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.parallax2 {
+	background: url("../images/van.avif");
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+@media only screen and (max-device-width: 5120px) {
+	.parallax {
+		background-attachment: scroll;
+	}
+}
+  
+.div2 {
+	width: 100vw;
+	height: 400px;
+	background-color: black;
+	position: relative;
+}
+
+.center-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.bottom-text {
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	vertical-align: middle;
+	text-align: center;
+}
